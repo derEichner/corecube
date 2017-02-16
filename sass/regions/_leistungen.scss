@@ -1,0 +1,66 @@
+@import '../tools/variables';
+
+.main-wrapper {
+width: 100%;
+background: white;
+
+	.leistungen {
+	max-width: 1200px;
+	margin: auto;
+
+		#leistung-item {
+		width: 33.33333333333%;
+		float: left;
+
+			.leistung-form {
+			width: 154px;
+			height: 84px;
+			background: $background-color;
+			position: relative;
+			margin: auto;
+			margin-top: 47px;
+			margin-bottom: 47px;
+
+				&:before {
+				content: "";
+				position: absolute;
+				top: -47px;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-left: 77px solid transparent;
+				border-right: 77px solid transparent;
+				border-bottom: 47px solid #f6f6f6;
+				}
+
+				&:after {
+				content: "";
+				position: absolute;
+				bottom: -47px;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-left: 77px solid transparent;
+				border-right: 77px solid transparent;
+				border-top: 47px solid #f6f6f6;
+				}
+			}
+
+			.leistung-item-headline {
+			margin-top: 100px;
+			}
+
+			.leistungstext {
+			text-align: center;
+			width: 80%;
+			margin: auto;
+			display: block;
+			}
+		}
+	}
+}
+
+
+
+
+

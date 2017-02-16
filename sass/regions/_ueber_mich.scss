@@ -1,0 +1,55 @@
+.main-wrapper-ueber-mich {
+	width: 100%;
+	background-color: $background-color;
+
+	.ueber-mich {
+	max-width: 1200px;
+	margin: auto;
+
+		.content {
+		margin: auto;
+		height: 491px;
+
+			.group-left {
+			float: left;
+			width: 30%;
+			margin-right: 6%;
+
+				.profilbild {
+				margin-top: 100px;
+
+					img {
+					width: 100%;
+					height: auto;	
+
+					}
+				}
+			}
+
+			.group-right {
+			float: left;
+			width: 64%;
+
+				.ueber-mich-subheadline {
+
+					.subheadline {
+					text-align: left;
+					margin-top: 130px;
+					width: 100%;
+					}
+				}
+
+				.ueber-mich-text {
+				width: 100%;
+				float: left;
+				height: auto;
+
+					p {
+					margin-top: 0;
+					margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
