@@ -1,2 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,900');
+
+//**Colors**//
+
 $font-color: #455a64;
 $background-color: #f6f6f6;
+
+//**Fonts**//
+
+$font-regular: 'Montserrat', sans-serif;
+
+//**Fontstyles**//
+
+$font-weight-regular: 300;
+$font-weight-semi: 600;
+$font-weight-black: 900;
+
+//**Breakpoints*//
+
+$bp-l: 900px;
+$bp-m: 670px;
+$bp-s: 450px;
+$bp-xs: 300px;

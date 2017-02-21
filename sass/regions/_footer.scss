@@ -5,6 +5,8 @@
 	height: 15px;
 	padding-top: 25px;
 	padding-bottom: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
 
 	.inner-footer {
 	max-width: 1200px;
@@ -24,6 +26,7 @@
 
 			.footer-menu {
 			margin: 0;
+			padding-left: 0;
 
 				li {
 				display: inline;
@@ -31,6 +34,10 @@
 				font-size: 14px;
 				font-family: montserratlight;
 				margin-left: 20px;
+
+					&:first-child {
+						margin-left: 0;
+					}
 				}
 			}
 		}

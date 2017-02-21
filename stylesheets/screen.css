@@ -1,30 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,900");
 /* line 1, ../sass/regions/_header.scss */
 .header {
   background-color: blue;
   height: 650px;
   background-image: linear-gradient(-135deg, #006e8f, #00a1c1);
+  padding: 10px 10px 0 10px;
 }
-/* line 6, ../sass/regions/_header.scss */
+/* line 7, ../sass/regions/_header.scss */
 .header .logo-wrapper {
   max-width: 1200px;
   width: 100%;
   margin: auto;
 }
-/* line 11, ../sass/regions/_header.scss */
+/* line 12, ../sass/regions/_header.scss */
 .header .logo-wrapper #logo {
   width: 23%;
   height: auto;
   min-width: 270px;
   margin-top: 30px;
 }
-/* line 19, ../sass/regions/_header.scss */
+/* line 20, ../sass/regions/_header.scss */
 .header .banner {
   max-width: 1200px;
   width: 100%;
   margin: auto;
   margin-top: 74px;
 }
-/* line 25, ../sass/regions/_header.scss */
+/* line 26, ../sass/regions/_header.scss */
 .header .banner #banner-image {
   max-width: 606px;
   width: 100%;
@@ -36,19 +38,32 @@
 .main-wrapper {
   width: 100%;
   background: white;
+  padding: 0 10px;
 }
-/* line 7, ../sass/regions/_leistungen.scss */
+/* line 8, ../sass/regions/_leistungen.scss */
 .main-wrapper .leistungen {
   max-width: 1200px;
   margin: auto;
 }
-/* line 11, ../sass/regions/_leistungen.scss */
-.main-wrapper .leistungen #leistung-item {
+/* line 12, ../sass/regions/_leistungen.scss */
+.main-wrapper .leistungen .leistung-item {
   width: 33.33333333333%;
   float: left;
 }
-/* line 15, ../sass/regions/_leistungen.scss */
-.main-wrapper .leistungen #leistung-item .leistung-form {
+@media (max-width: 670px) {
+  /* line 12, ../sass/regions/_leistungen.scss */
+  .main-wrapper .leistungen .leistung-item {
+    width: 100%;
+    float: none;
+    margin-bottom: 80px;
+  }
+  /* line 21, ../sass/regions/_leistungen.scss */
+  .main-wrapper .leistungen .leistung-item:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+/* line 26, ../sass/regions/_leistungen.scss */
+.main-wrapper .leistungen .leistung-item .leistung-form {
   width: 154px;
   height: 84px;
   background: #f6f6f6;
@@ -57,8 +72,8 @@
   margin-top: 47px;
   margin-bottom: 47px;
 }
-/* line 24, ../sass/regions/_leistungen.scss */
-.main-wrapper .leistungen #leistung-item .leistung-form:before {
+/* line 35, ../sass/regions/_leistungen.scss */
+.main-wrapper .leistungen .leistung-item .leistung-form:before {
   content: "";
   position: absolute;
   top: -47px;
@@ -69,8 +84,8 @@
   border-right: 77px solid transparent;
   border-bottom: 47px solid #f6f6f6;
 }
-/* line 36, ../sass/regions/_leistungen.scss */
-.main-wrapper .leistungen #leistung-item .leistung-form:after {
+/* line 47, ../sass/regions/_leistungen.scss */
+.main-wrapper .leistungen .leistung-item .leistung-form:after {
   content: "";
   position: absolute;
   bottom: -47px;
@@ -81,12 +96,18 @@
   border-right: 77px solid transparent;
   border-top: 47px solid #f6f6f6;
 }
-/* line 49, ../sass/regions/_leistungen.scss */
-.main-wrapper .leistungen #leistung-item .leistung-item-headline {
+/* line 60, ../sass/regions/_leistungen.scss */
+.main-wrapper .leistungen .leistung-item .leistung-item-headline {
   margin-top: 100px;
 }
-/* line 53, ../sass/regions/_leistungen.scss */
-.main-wrapper .leistungen #leistung-item .leistungstext {
+@media (max-width: 670px) {
+  /* line 60, ../sass/regions/_leistungen.scss */
+  .main-wrapper .leistungen .leistung-item .leistung-item-headline {
+    margin-top: 60px;
+  }
+}
+/* line 68, ../sass/regions/_leistungen.scss */
+.main-wrapper .leistungen .leistung-item .leistungstext {
   text-align: center;
   width: 80%;
   margin: auto;
@@ -97,50 +118,51 @@
 .main-wrapper-ueber-mich {
   width: 100%;
   background-color: #f6f6f6;
+  padding: 0 10px;
 }
-/* line 5, ../sass/regions/_ueber_mich.scss */
+/* line 6, ../sass/regions/_ueber_mich.scss */
 .main-wrapper-ueber-mich .ueber-mich {
   max-width: 1200px;
   margin: auto;
 }
-/* line 9, ../sass/regions/_ueber_mich.scss */
+/* line 10, ../sass/regions/_ueber_mich.scss */
 .main-wrapper-ueber-mich .ueber-mich .content {
   margin: auto;
   height: 491px;
 }
-/* line 13, ../sass/regions/_ueber_mich.scss */
+/* line 14, ../sass/regions/_ueber_mich.scss */
 .main-wrapper-ueber-mich .ueber-mich .content .group-left {
   float: left;
   width: 30%;
   margin-right: 6%;
 }
-/* line 18, ../sass/regions/_ueber_mich.scss */
+/* line 19, ../sass/regions/_ueber_mich.scss */
 .main-wrapper-ueber-mich .ueber-mich .content .group-left .profilbild {
   margin-top: 100px;
 }
-/* line 21, ../sass/regions/_ueber_mich.scss */
+/* line 22, ../sass/regions/_ueber_mich.scss */
 .main-wrapper-ueber-mich .ueber-mich .content .group-left .profilbild img {
   width: 100%;
   height: auto;
 }
-/* line 29, ../sass/regions/_ueber_mich.scss */
+/* line 30, ../sass/regions/_ueber_mich.scss */
 .main-wrapper-ueber-mich .ueber-mich .content .group-right {
   float: left;
   width: 64%;
 }
-/* line 35, ../sass/regions/_ueber_mich.scss */
+/* line 36, ../sass/regions/_ueber_mich.scss */
 .main-wrapper-ueber-mich .ueber-mich .content .group-right .ueber-mich-subheadline .subheadline {
   text-align: left;
   margin-top: 130px;
   width: 100%;
 }
-/* line 42, ../sass/regions/_ueber_mich.scss */
+/* line 43, ../sass/regions/_ueber_mich.scss */
 .main-wrapper-ueber-mich .ueber-mich .content .group-right .ueber-mich-text {
   width: 100%;
   float: left;
   height: auto;
 }
-/* line 47, ../sass/regions/_ueber_mich.scss */
+/* line 48, ../sass/regions/_ueber_mich.scss */
 .main-wrapper-ueber-mich .ueber-mich .content .group-right .ueber-mich-text p {
   margin-top: 0;
   margin-bottom: 0;
@@ -150,14 +172,15 @@
 .portfolio {
   max-width: 1200px;
   margin: auto;
+  padding: 0 10px;
 }
-/* line 6, ../sass/regions/_portfolio.scss */
+/* line 7, ../sass/regions/_portfolio.scss */
 .portfolio .headline-wrapper {
   max-width: 100%;
   width: 1200px;
   margin: auto;
 }
-/* line 14, ../sass/regions/_portfolio.scss */
+/* line 15, ../sass/regions/_portfolio.scss */
 .portfolio .row-items .row-item {
   width: 31.33333333333333%;
   height: auto;
@@ -166,15 +189,15 @@
   margin-bottom: 30px;
   box-shadow: 0px 0px 12px 4px #ebebeb;
 }
-/* line 22, ../sass/regions/_portfolio.scss */
+/* line 23, ../sass/regions/_portfolio.scss */
 .portfolio .row-items .row-item:nth-child(3n) {
   margin-right: 0;
 }
-/* line 26, ../sass/regions/_portfolio.scss */
+/* line 27, ../sass/regions/_portfolio.scss */
 .portfolio .row-items .row-item:nth-last-child(-n+4) {
   margin-bottom: 0;
 }
-/* line 30, ../sass/regions/_portfolio.scss */
+/* line 31, ../sass/regions/_portfolio.scss */
 .portfolio .row-items .row-item img {
   width: 100%;
   height: auto;
@@ -189,30 +212,33 @@
   height: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-/* line 9, ../sass/regions/_footer.scss */
+/* line 11, ../sass/regions/_footer.scss */
 .footer .inner-footer {
   max-width: 1200px;
   margin: auto;
 }
-/* line 13, ../sass/regions/_footer.scss */
+/* line 15, ../sass/regions/_footer.scss */
 .footer .inner-footer .group-left {
   float: left;
 }
-/* line 16, ../sass/regions/_footer.scss */
+/* line 18, ../sass/regions/_footer.scss */
 .footer .inner-footer .group-left p {
   color: #ffffff;
   margin: 0;
 }
-/* line 22, ../sass/regions/_footer.scss */
+/* line 24, ../sass/regions/_footer.scss */
 .footer .inner-footer .group-right {
   float: right;
 }
-/* line 25, ../sass/regions/_footer.scss */
+/* line 27, ../sass/regions/_footer.scss */
 .footer .inner-footer .group-right .footer-menu {
   margin: 0;
+  padding-left: 0;
 }
-/* line 28, ../sass/regions/_footer.scss */
+/* line 31, ../sass/regions/_footer.scss */
 .footer .inner-footer .group-right .footer-menu li {
   display: inline;
   color: #ffffff;
@@ -220,69 +246,71 @@
   font-family: montserratlight;
   margin-left: 20px;
 }
+/* line 38, ../sass/regions/_footer.scss */
+.footer .inner-footer .group-right .footer-menu li:first-child {
+  margin-left: 0;
+}
 
-/* line 31, ../sass/tools/_mixins.scss */
+/* line 34, ../sass/tools/_mixins.scss */
 body {
   margin: 0;
 }
 
-/* line 35, ../sass/tools/_mixins.scss */
+/* line 38, ../sass/tools/_mixins.scss */
 h1 {
   color: #455a64;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 55px;
   text-align: center;
-  font-family: montserratsemibold;
   margin-top: 100px;
   margin-bottom: 100px;
 }
-
-/* line 46, ../sass/tools/_mixins.scss */
-h2 {
-  color: #455a64;
-  text-transform: uppercase;
-  font-size: 25px;
-  text-align: center;
-  font-family: montserratsemibold;
+@media (max-width: 670px) {
+  /* line 38, ../sass/tools/_mixins.scss */
+  h1 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 /* line 55, ../sass/tools/_mixins.scss */
+h2 {
+  color: #455a64;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* line 65, ../sass/tools/_mixins.scss */
 p {
   color: #455a64;
   font-size: 14px;
-  font-family: montserratlight;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
-/* line 61, ../sass/tools/_mixins.scss */
+/* line 72, ../sass/tools/_mixins.scss */
 .button {
   padding: 24px;
   background-image: linear-gradient(-135deg, #006e8f, #00a1c1);
   font-size: 16px;
-  font-family: montserratlight;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
   color: #ffffff;
   display: inline-block;
   margin-top: 30px;
   text-decoration: none;
 }
 
-/* line 73, ../sass/tools/_mixins.scss */
+/* line 85, ../sass/tools/_mixins.scss */
 .clearfix:after {
   content: ".";
   clear: both;
   display: block;
   visibility: hidden;
   height: 0px;
-}
-
-@font-face {
-  font-family: montserratsemibold;
-  src: url(../fonts/montserrat-semibold.woff);
-}
-@font-face {
-  font-family: montserratlight;
-  src: url(../fonts/montserrat-light.woff);
-}
-@font-face {
-  font-family: montserrat-extrabold;
-  src: url(..fonts/montserrat-extrabold.woff);
 }

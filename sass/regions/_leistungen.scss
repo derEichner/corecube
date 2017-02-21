@@ -3,14 +3,25 @@
 .main-wrapper {
 width: 100%;
 background: white;
+padding: 0 10px;
 
 	.leistungen {
 	max-width: 1200px;
 	margin: auto;
 
-		#leistung-item {
+		.leistung-item {
 		width: 33.33333333333%;
 		float: left;
+
+			@media (max-width: $bp-m) {
+				width: 100%;
+				float: none;
+				margin-bottom: 80px;
+
+				&:nth-child(3) {
+					margin-bottom: 0;
+				}
+			}
 
 			.leistung-form {
 			width: 154px;
@@ -48,6 +59,10 @@ background: white;
 
 			.leistung-item-headline {
 			margin-top: 100px;
+
+				@media (max-width: $bp-m) {
+					margin-top: 60px;
+				}
 			}
 
 			.leistungstext {
