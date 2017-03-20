@@ -2,18 +2,27 @@
 	width: 100%;
 	background-color: #455a64;
 	margin-top: 100px;
-	height: 15px;
 	padding-top: 25px;
+	height: 15px;
 	padding-bottom: 25px;
-	padding-left: 10px;
-	padding-right: 10px;
+
+	@media (max-width: 500px) {
+		height: auto;
+	}
 
 	.inner-footer {
 	max-width: 1200px;
 	margin: auto;
+	padding: 0 10px;
 
 		.group-left {
 		float: left;
+
+		@media (max-width: 500px) {
+			float: none;
+			width: 100%;
+			text-align: center
+		}
 
 			p {
 			color: #ffffff;
@@ -24,6 +33,13 @@
 		.group-right {
 		float: right;
 
+		@media (max-width: 500px) {
+			float: none;
+			width: 100%;
+			text-align: center;
+			margin-top: 20px;
+		}
+
 			.footer-menu {
 			margin: 0;
 			padding-left: 0;
@@ -32,8 +48,10 @@
 				display: inline;
 				color: #ffffff;
 				font-size: 14px;
-				font-family: montserratlight;
+				font-family: $font-regular;
+				font-weight: 300;
 				margin-left: 20px;
+				text-decoration: underline;
 
 					&:first-child {
 						margin-left: 0;
