@@ -9,6 +9,16 @@ padding: 0 10px;
 	max-width: 1200px;
 	margin: auto;
 
+		.headline-wrapper {
+
+			h1 {
+
+				@media (max-width: 670px) {
+					margin-bottom: 60px;
+				}
+			}
+		}
+
 		.leistung-item {
 		width: 33.33333333333%;
 		float: left;
@@ -55,6 +65,11 @@ padding: 0 10px;
 				border-right: 77px solid transparent;
 				border-top: 47px solid #f6f6f6;
 				}
+
+				img {
+					max-width: 154px;
+					width: 100%;
+					height: auto;				}
 			}
 
 			.leistung-item-headline {

@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-	color: $font-color;
+	color: $headline-color;
 	font-family: $font-regular;
 	font-weight: $font-weight-black;
 	text-transform: uppercase;
@@ -15,8 +15,8 @@ h1 {
 	margin-bottom: 100px;
 
 	@media (max-width: $bp-m) {
-		margin-top: 60px;
-		margin-bottom: 60px;
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 
 	@media (max-width: $bp-m) {
@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-	color: $font-color;
+	color: $headline-color;
 	font-family: $font-regular;
 	font-weight: $font-weight-semi;
 	text-transform: uppercase;
