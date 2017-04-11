@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="stylesheets/screen.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.min.css" type="text/css" rel="stylesheet" />
  		<title>CoreCube - Grafik-, Print- und Webdesign</title>
 	</head>
 	<body>
@@ -15,10 +16,10 @@
 					<div class="menu-wrapper">
 						<div class="menu">
 							<div class="logo-wrapper">
-								<img id="logo" src="images/logo-07.svg" alt="logo">
+								<img id="logo" src="images/logo-07.svg" alt="logo" href="index.html">
 							</div>
 							<div class="contact-button">
-								<a class="button" href="http://www.test.de/">Zum Kontaktformular
+								<a class="button" href="#kontakt">Zum Kontaktformular
 								</a>
 							</div>
 						</div>
@@ -94,7 +95,7 @@
 									<br>Habe ich ihr Interesse geweckt? Dann kontaktieren Sie mich doch einfach!</p>
 								</div>
 								<div class="button-wrapper">
-									<a class="button" href="http://www.test.de/">Zum Kontaktformular
+									<a class="button" href="#kontakt">Zum Kontaktformular
 									</a>
 								</div>
 							</div>
@@ -110,27 +111,90 @@
 						<h1>Portfolio</h1>
 					</div>
 					<div class="row-items">
-						<div class="row-item 1">
-							<a href="images/platzhalter.png" data-lightbox="platzhalter" data-title="Bildunterschrift">
+						<div class="row-item item-1">
+							<a data-featherlight="image" href="images/porfolio-fasching-poster-kolping-dietfurt.png">
+								<img src="images/porfolio-fasching-poster-kolping-dietfurt.png">
+							</a>
+						</div>
+						<div class="row-item item-2">
+							<a data-featherlight="image" href="images/platzhalter.png">
 								<img src="images/platzhalter.png">
 							</a>
 						</div>
-						<div class="row-item 2">
-							<img src="images/platzhalter.png">
+						<div class="row-item item-3">
+							<a data-featherlight="image" href="images/platzhalter.png">
+								<img src="images/platzhalter.png">
+							</a>
 						</div>
-						<div class="row-item 3">
-							<img src="images/platzhalter.png">
+						<div class="row-item item-4">
+							<a data-featherlight="image" href="images/platzhalter.png">
+								<img src="images/platzhalter.png">
+							</a>
 						</div>
-						<div class="row-item 4">
-							<img src="images/platzhalter.png">
+						<div class="row-item item-5">
+							<a data-featherlight="image" href="images/platzhalter.png">
+								<img src="images/platzhalter.png">
+							</a>
 						</div>
-						<div class="row-item 5">
-							<img src="images/platzhalter.png">
-						</div>
-						<div class="row-item 6">
-							<img src="images/platzhalter.png">
+						<div class="row-item item-6">
+							<a data-featherlight="image" href="images/platzhalter.png">
+								<img src="images/platzhalter.png">
+							</a>
 						</div>
 						<div class="clearfix">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-wrapper-kontakt">
+				<div id="kontakt">
+					<div class="headline-wrapper">
+						<h1>Kontakt</h1>
+					</div>
+					<div class="content-wrapper">
+						<div class="content">
+							<div class="group-left">
+								<form id="kontaktformular" name="kontaktformular" action="mailto:info@corecube.de" method="post">
+								<div class="kontakt-feld kontakt-vorname">
+								  <label for="vorname">Vorname:</label>
+								  <input type="text" id="vorname" name="absender" />
+								</div>
+								<div class="kontakt-feld kontakt-nachname">
+								  <label for="vorname">Nachname:</label>
+								  <input type="text" id="nachname" name="absender" />
+								</div>
+								<div class="kontakt-feld kontakt-absender">
+								  <label for="absender">E-Mail:</label>
+								  <input type="text" id="absender" name="absender" />
+								</div>
+								<div class="kontakt-textarea kontakt-nachricht">
+								  <label for="nachricht">Ihre Nachricht:</label>
+								  <textarea id="nachricht" name="nachricht" cols="20" rows="5"></textarea> 
+								</div>
+								<div class="button-wrapper">
+									<div class="button">
+									  <input type="submit" value="Abschicken" />
+									</div>
+								</div>
+								</form>
+							</div>
+							<div class="group-right">
+								<div class="adressdaten-kontakt">
+									<h2>Adressdaten</h2>
+									<ul class="adresse">
+										<li>Marco Eichner</li>
+										<li>Weinbergerstr. 68</li>
+										<li>92318 Neumarkt</li>
+									</ul>
+								</div>
+								<div class="kontaktdaten">
+									<h2>Kontaktdaten</h2>
+									<ul class="kontaktlist">
+										<li class="e-mail-kontakt"><a href="mailto:info@corecube.de">info@corecube.de</a></li>
+										<li class="mobil-kontakt"><a href="tel:+4917696234340">0176 96234340</a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -142,13 +206,14 @@
 					</div>
 					<div class="group-right">
 						<ul class="footer-menu">
-							<li><a src="<front>">Kontakt</a></li>
-							<li><a src="<front>">Datenschutz</a></li>
-							<li><a src="<front>">Impressum</a></li>
+							<li><a src="datenschutz.html">Datenschutz</a></li>
+							<li><a src="impressum.html">Impressum</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

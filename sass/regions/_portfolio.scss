@@ -2,6 +2,11 @@
 max-width: 1200px;
 margin: auto;
 padding: 0 10px;
+margin-bottom: 100px;
+
+	@media (max-width: $bp-m) {
+		margin-bottom: 40px;
+	}
 
 
 	.headline-wrapper {
@@ -32,6 +37,7 @@ padding: 0 10px;
 			width: 100%;
 			height: auto;
 			display: block;
+			max-height: 330px;
 			}
 
 			@media (max-width: $bp-m) {
@@ -57,6 +63,14 @@ padding: 0 10px;
 			//		margin-bottom: 0 !important;
 			//	}
 		//	}
+		}
+
+		.item-4 {
+			clear: both;
+
+			@media (max-width: $bp-m) {
+				clear: none;
+			}
 		}
 	}
 }

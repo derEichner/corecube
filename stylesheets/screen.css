@@ -105,6 +105,13 @@
   }
 }
 
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fonts/fontawesome-webfont.eot");
+  src: url("fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome-webfont.ttf") format("truetype"), url("fonts/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /* line 3, ../sass/regions/_leistungen.scss */
 .main-wrapper {
   width: calc(100% - 20px);
@@ -378,19 +385,271 @@
   color: #ffffff;
 }
 
+/* line 1, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt {
+  width: calc(100% - 20px);
+  padding: 0 10px;
+  background-color: #0481a7;
+  background-image: url(../images/billie-holiday_60.png);
+}
+/* line 7, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt {
+  max-width: 1200px;
+  margin: auto;
+}
+/* line 13, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .headline-wrapper h1 {
+  color: #ffffff;
+  margin-top: 0;
+  padding-top: 50px;
+}
+/* line 20, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content {
+  padding-bottom: 50px;
+}
+@media (max-width: 670px) {
+  /* line 20, ../sass/regions/_kontakt.scss */
+  .main-wrapper-kontakt #kontakt .content {
+    padding-bottom: 40px;
+  }
+}
+/* line 27, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content:after {
+  content: ".";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0px;
+}
+/* line 35, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-left {
+  width: calc(65.66666666666667% + 3%);
+  float: left;
+  margin-right: 3%;
+}
+@media (max-width: 840px) {
+  /* line 35, ../sass/regions/_kontakt.scss */
+  .main-wrapper-kontakt #kontakt .content .group-left {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+/* line 47, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-left #kontaktformular .kontakt-feld {
+  width: 100%;
+  margin-bottom: 22px;
+}
+/* line 51, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-left #kontaktformular .kontakt-feld label {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+/* line 60, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-left #kontaktformular .kontakt-feld input {
+  margin-top: 5px;
+  height: 36px;
+  width: 100%;
+  background-color: #007396;
+  background-image: url(../images/billie-holiday_60.png);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid #006e8f;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+/* line 79, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-left #kontaktformular .kontakt-textarea {
+  width: 100%;
+}
+/* line 82, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-left #kontaktformular .kontakt-textarea label {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+/* line 90, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-left #kontaktformular .kontakt-textarea textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 170px;
+  background-color: #007396;
+  background-image: url(../images/billie-holiday_60.png);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid #006e8f;
+  margin-top: 10px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  padding: 10px;
+  max-width: 824px;
+}
+@media (max-width: 670px) {
+  /* line 109, ../sass/regions/_kontakt.scss */
+  .main-wrapper-kontakt #kontakt .content .group-left #kontaktformular .button-wrapper {
+    text-align: center;
+    float: none;
+  }
+}
+/* line 116, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-left #kontaktformular .button-wrapper .button {
+  cursor: pointer;
+}
+/* line 119, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-left #kontaktformular .button-wrapper .button input {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+/* line 128, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-left #kontaktformular .button-wrapper .button input:hover {
+  color: #006e8f;
+}
+/* line 137, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-right {
+  width: calc(31.33333333333333% - 3%);
+  float: left;
+}
+@media (max-width: 840px) {
+  /* line 137, ../sass/regions/_kontakt.scss */
+  .main-wrapper-kontakt #kontakt .content .group-right {
+    width: 100%;
+    margin-top: 36px;
+  }
+  /* line 145, ../sass/regions/_kontakt.scss */
+  .main-wrapper-kontakt #kontakt .content .group-right .adressdaten-kontakt {
+    width: calc(50% - 18px);
+    margin-right: 36px;
+  }
+  /* line 150, ../sass/regions/_kontakt.scss */
+  .main-wrapper-kontakt #kontakt .content .group-right .kontaktdaten {
+    width: calc(50% - 18px);
+  }
+}
+@media (max-width: 450px) {
+  /* line 158, ../sass/regions/_kontakt.scss */
+  .main-wrapper-kontakt #kontakt .content .group-right .adressdaten-kontakt {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+  /* line 163, ../sass/regions/_kontakt.scss */
+  .main-wrapper-kontakt #kontakt .content .group-right .adressdaten-kontakt h2 {
+    text-align: center !important;
+  }
+  /* line 168, ../sass/regions/_kontakt.scss */
+  .main-wrapper-kontakt #kontakt .content .group-right .kontaktdaten {
+    width: 100%;
+    text-align: center;
+  }
+  /* line 172, ../sass/regions/_kontakt.scss */
+  .main-wrapper-kontakt #kontakt .content .group-right .kontaktdaten h2 {
+    text-align: center !important;
+  }
+}
+/* line 178, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-right .adressdaten-kontakt {
+  margin-bottom: 30px;
+  float: left;
+}
+/* line 182, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-right .adressdaten-kontakt h2 {
+  text-align: left;
+  color: #ffffff;
+  color: #ffffff;
+}
+/* line 187, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-right .adressdaten-kontakt h2:first-child {
+  margin-top: 0;
+}
+/* line 192, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-right .adressdaten-kontakt .adresse {
+  padding: 0;
+  margin: 0;
+}
+/* line 196, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-right .adressdaten-kontakt .adresse li {
+  display: inline;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-weight: 300;
+  width: 100%;
+  float: left;
+  font-size: 14px;
+}
+/* line 208, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-right .kontaktdaten {
+  float: left;
+}
+/* line 211, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-right .kontaktdaten h2 {
+  margin-top: 0;
+  color: #ffffff;
+  text-align: left;
+}
+/* line 217, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-right .kontaktdaten .kontaktlist {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+/* line 224, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-right .kontaktdaten .kontaktlist li {
+  display: inline;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-weight: 300;
+  width: 100%;
+  float: left;
+  font-size: 14px;
+}
+/* line 233, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-right .kontaktdaten .kontaktlist li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* line 237, ../sass/regions/_kontakt.scss */
+.main-wrapper-kontakt #kontakt .content .group-right .kontaktdaten .kontaktlist li a:hover {
+  text-decoration: underline;
+}
+
 /* line 1, ../sass/regions/_portfolio.scss */
 .portfolio {
   max-width: 1200px;
   margin: auto;
   padding: 0 10px;
+  margin-bottom: 100px;
 }
-/* line 7, ../sass/regions/_portfolio.scss */
+@media (max-width: 670px) {
+  /* line 1, ../sass/regions/_portfolio.scss */
+  .portfolio {
+    margin-bottom: 40px;
+  }
+}
+/* line 12, ../sass/regions/_portfolio.scss */
 .portfolio .headline-wrapper {
   max-width: 100%;
   width: 1200px;
   margin: auto;
 }
-/* line 15, ../sass/regions/_portfolio.scss */
+/* line 20, ../sass/regions/_portfolio.scss */
 .portfolio .row-items .row-item {
   width: calc((100% - 72px) / 3);
   height: auto;
@@ -399,51 +658,56 @@
   margin-bottom: 36px;
   box-shadow: 0px 0px 12px 4px #ebebeb;
 }
-/* line 23, ../sass/regions/_portfolio.scss */
+/* line 28, ../sass/regions/_portfolio.scss */
 .portfolio .row-items .row-item:nth-child(3n) {
   margin-right: 0;
 }
-/* line 27, ../sass/regions/_portfolio.scss */
+/* line 32, ../sass/regions/_portfolio.scss */
 .portfolio .row-items .row-item:nth-last-child(-n+4) {
   margin-bottom: 0;
 }
-/* line 31, ../sass/regions/_portfolio.scss */
+/* line 36, ../sass/regions/_portfolio.scss */
 .portfolio .row-items .row-item img {
   width: 100%;
   height: auto;
   display: block;
+  max-height: 330px;
 }
 @media (max-width: 670px) {
-  /* line 15, ../sass/regions/_portfolio.scss */
+  /* line 20, ../sass/regions/_portfolio.scss */
   .portfolio .row-items .row-item {
     width: calc(50% - 9px);
     float: left;
     margin-bottom: 18px;
   }
-  /* line 42, ../sass/regions/_portfolio.scss */
+  /* line 48, ../sass/regions/_portfolio.scss */
   .portfolio .row-items .row-item:nth-child(2n) {
     margin-right: 0;
   }
-  /* line 46, ../sass/regions/_portfolio.scss */
+  /* line 52, ../sass/regions/_portfolio.scss */
   .portfolio .row-items .row-item:nth-child(odd) {
     margin-right: 18px;
+  }
+}
+/* line 68, ../sass/regions/_portfolio.scss */
+.portfolio .row-items .item-4 {
+  clear: both;
+}
+@media (max-width: 670px) {
+  /* line 68, ../sass/regions/_portfolio.scss */
+  .portfolio .row-items .item-4 {
+    clear: none;
   }
 }
 
 /* line 1, ../sass/regions/_footer.scss */
 .footer {
   width: 100%;
-  background-color: #455a64;
-  margin-top: 100px;
+  background-color: #006e8f;
+  background-image: url(../images/billie-holiday_60.png);
   padding-top: 25px;
   height: 15px;
   padding-bottom: 25px;
-}
-@media (max-width: 670px) {
-  /* line 1, ../sass/regions/_footer.scss */
-  .footer {
-    margin-top: 40px;
-  }
 }
 @media (max-width: 500px) {
   /* line 1, ../sass/regions/_footer.scss */
@@ -451,35 +715,35 @@
     height: auto;
   }
 }
-/* line 17, ../sass/regions/_footer.scss */
+/* line 13, ../sass/regions/_footer.scss */
 .footer .inner-footer {
   max-width: 1200px;
   margin: auto;
   padding: 0 10px;
 }
-/* line 22, ../sass/regions/_footer.scss */
+/* line 18, ../sass/regions/_footer.scss */
 .footer .inner-footer .group-left {
   float: left;
 }
 @media (max-width: 500px) {
-  /* line 22, ../sass/regions/_footer.scss */
+  /* line 18, ../sass/regions/_footer.scss */
   .footer .inner-footer .group-left {
     float: none;
     width: 100%;
     text-align: center;
   }
 }
-/* line 31, ../sass/regions/_footer.scss */
+/* line 27, ../sass/regions/_footer.scss */
 .footer .inner-footer .group-left p {
   color: #ffffff;
   margin: 0;
 }
-/* line 37, ../sass/regions/_footer.scss */
+/* line 33, ../sass/regions/_footer.scss */
 .footer .inner-footer .group-right {
   float: right;
 }
 @media (max-width: 500px) {
-  /* line 37, ../sass/regions/_footer.scss */
+  /* line 33, ../sass/regions/_footer.scss */
   .footer .inner-footer .group-right {
     float: none;
     width: 100%;
@@ -487,12 +751,12 @@
     margin-top: 20px;
   }
 }
-/* line 47, ../sass/regions/_footer.scss */
+/* line 43, ../sass/regions/_footer.scss */
 .footer .inner-footer .group-right .footer-menu {
   margin: 0;
   padding-left: 0;
 }
-/* line 51, ../sass/regions/_footer.scss */
+/* line 47, ../sass/regions/_footer.scss */
 .footer .inner-footer .group-right .footer-menu li {
   display: inline;
   color: #ffffff;
@@ -500,11 +764,14 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   margin-left: 20px;
-  text-decoration: underline;
 }
-/* line 60, ../sass/regions/_footer.scss */
+/* line 55, ../sass/regions/_footer.scss */
 .footer .inner-footer .group-right .footer-menu li:first-child {
   margin-left: 0;
+}
+/* line 59, ../sass/regions/_footer.scss */
+.footer .inner-footer .group-right .footer-menu li a {
+  cursor: pointer;
 }
 
 /* line 3, ../sass/tools/_mixins.scss */
