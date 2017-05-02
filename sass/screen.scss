@@ -6,6 +6,7 @@
 @import 'regions/kontakt';
 @import 'regions/portfolio';
 @import 'regions/footer';
+@import 'regions/impressum';
 
 //#### mixins ####//
 
@@ -14,3 +15,5 @@
 //#### variables ####//
 
 @import 'tools/variables';
+
+@import '/Ruby23-x64/lib/ruby/gems/2.3.0/gems/font-awesome-sass-4.7.0/assets/stylesheets/font-awesome'

@@ -1,0 +1,24 @@
+.impressum {
+	max-width: 1200px;
+	margin: auto;
+	margin-bottom: 100px;
+
+	@media (max-width: $bp-m) {
+		margin-bottom: 40px;
+	}
+
+	h2 {
+		text-align: left;
+	}
+
+	.text-bold {
+		font-weight: $font-weight-semi;
+	}
+
+	li {
+		font-family: $font-regular;
+		color: $font-color;
+		font-size: $font-size-regular;
+		font-weight: $font-weight-regular;
+	}
+}
